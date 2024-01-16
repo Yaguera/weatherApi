@@ -1,0 +1,27 @@
+/* GERAIS */
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(180deg,#594cee 0%,#0dd8f5 100% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    background-color: #5c54ed;
+    box-shadow: rgba(0, 0 ,0, .24) 0px 3px 8px;
+    padding: 2rem;
+    color: #FDFDFD;
+    border-radius: 1rem;
+}
