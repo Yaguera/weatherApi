@@ -30,6 +30,7 @@ body{
 
 .form-input-container{
     display: flex;
+    margin-top: .6rem;
 }
 
 .form input{
@@ -57,24 +58,22 @@ body{
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     text-align: center;
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: .6rem;
+        h2 i{
+            font-size: 1rem;
+        }
+        h2 span{
+            margin: .6rem;
+        }
+    }
 }
 
-#weather-data h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: .6rem;
-}
 
-#weather-data h2 i{
-    font-size: 1rem;
-}
-
-#weather-data h2 span{
-    margin: .6rem;
-}
-
-#country {
+#country-flag {
     height: 25px;
 }
 
@@ -89,10 +88,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#details-container #umidity{
-    border-right: 1px solid #fff;
-    margin: .6rem;
-    padding: .6rem;
+    #umidity{
+        border-right: 1px solid #fff;
+        margin: .6rem;
+        padding: .6rem;
+    }
 }

@@ -1,0 +1,95 @@
+/* GERAIS */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #594cee 0%, #0dd8f5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  background-color: #5c54ed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  color: #FDFDFD;
+  border-radius: 1rem;
+}
+
+/* FORM */
+.form-input-container {
+  display: flex;
+  margin-top: 0.6rem;
+}
+
+.form input {
+  border: none;
+  padding: 0.8rem;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 0.8rem;
+  min-width: 50px;
+  margin-left: 8px;
+  background-color: #0dd8f5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* CLIMA */
+#weather-data {
+  border-top: 1px solid #fff;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+#weather-data h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+#weather-data h2 h2 i {
+  font-size: 1rem;
+}
+#weather-data h2 h2 span {
+  margin: 0.6rem;
+}
+
+#country-flag {
+  height: 25px;
+}
+
+#description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem 0;
+}
+
+#details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#details-container #umidity {
+  border-right: 1px solid #fff;
+  margin: 0.6rem;
+  padding: 0.6rem;
+}
+
+/*# sourceMappingURL=main.css.map */
