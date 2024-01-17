@@ -1,4 +1,6 @@
+@use 'sass:math';
 /* GERAIS */
+
 *{
     padding: 0;
     margin:0;
@@ -49,6 +51,9 @@ body{
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    &:hover{
+        background-color: #098092;
+    }
 }
 
 /* CLIMA */
@@ -91,7 +96,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    #umidity{
+    #humidity{
         border-right: 1px solid #fff;
         margin: .6rem;
         padding: .6rem;
