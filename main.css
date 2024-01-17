@@ -57,6 +57,9 @@ body {
   padding-top: 1.5rem;
   text-align: center;
 }
+#weather-data #city {
+  margin: 0 0.7rem;
+}
 #weather-data h2 {
   display: flex;
   justify-content: center;
