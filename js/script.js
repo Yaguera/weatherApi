@@ -20,6 +20,7 @@ const weatherIconElement = document.querySelector("#weather-icon")
 const countryElement = document.querySelector("#country-flag")
 const humidityElement = document.querySelector("#humidity span")
 const windElement = document.querySelector("#wind span")
+const dataContainer = document.querySelector(".hide")
 
 // FUNÇÕES
 const capitalizeFirstLetter = (str) => {
@@ -41,6 +42,7 @@ const getWeatherData = async(city) => {
     return data;
 }
 const showWeatherData = async(city) => {
+    dataContainer.classList.remove('hide')
     const data = await getWeatherData(city)
     cityElement.innerText = data.name;
     tempElement.innerText = data.main.temp;
