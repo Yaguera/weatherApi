@@ -8,7 +8,7 @@ const obfuscatedKey = String.fromCharCode(
 
 
 const api = obfuscatedKey;
-const apiCountry = "https://flagsapi.com/BR/flat/64.png";
+const apiCountry = "https://flagsapi.com/";
 
 const cityInput = document.querySelector("#city-name");
 const searchButton = document.querySelector("#search");
@@ -17,7 +17,7 @@ const cityElement = document.querySelector("#city")
 const tempElement = document.querySelector("#temperature span")
 const descElement = document.querySelector("#description")
 const weatherIconElement = document.querySelector("#weather-icon")
-const countryElement = document.querySelector("#country")
+const countryElement = document.querySelector("#country-flag")
 const umidityElement = document.querySelector("#umidity span")
 const windElement = document.querySelector("#wind span")
 
@@ -36,7 +36,8 @@ const showWeatherData = async(city) => {
     cityElement.innerText = data.name;
     tempElement.innerText = data.main.temp;
     descElement.innerText = data.weather[0].description;
-    weatherIconElement.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
+    weatherIconElement.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
+    countryElement.setAttribute("src",apiCountry + data.sys.country + "/flat/64.png")
 }
 
 // EVENTOS
