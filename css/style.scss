@@ -57,7 +57,6 @@ body{
 }
 
 /* CLIMA */
-
 #weather-data{
     border-top: 1px solid #fff;
     margin-top: 1.5rem;
@@ -102,3 +101,16 @@ body{
         padding: .6rem;
     }
 }
+
+
+/* Loader */
+#loader i {
+    animation: rotate 1.5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
