@@ -49,6 +49,9 @@ body {
   cursor: pointer;
   border-radius: 4px;
 }
+.form button:hover {
+  background-color: #098092;
+}
 
 /* CLIMA */
 #weather-data {
@@ -93,6 +96,17 @@ body {
   border-right: 1px solid #fff;
   margin: 0.6rem;
   padding: 0.6rem;
+}
+
+/* Loader */
+#loader i {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

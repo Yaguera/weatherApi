@@ -27,6 +27,23 @@ const errorMessageContainer = document.querySelector("#error-message");
 const loader = document.querySelector("#loader");
 
 // FUNÇÕES
+      // Geolocation
+if(navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition( async (position) => {
+    const{ longitude, latitude } = position.coords;
+
+    const response = await fetch(`https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/reverseGeocode?f=pjson&featureTypes=&location=${longitude},${latitude}`)
+
+    const data = await response.json()
+    console.log(data.address.City)
+
+    cityInput.value = data.address.City;
+    showWeatherData(cityInput.value);
+  });
+}
+
+
+
 const toggleLoader = () => {
     loader.classList.toggle("hide");
   };
