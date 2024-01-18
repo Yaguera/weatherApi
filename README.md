@@ -33,6 +33,7 @@
 * JAVASCRIPT
 * Git
 * VSCode
+* Integrações com APIs
 <br>
 
 ## Link do deploy: <https://weatherapi-eight.vercel.app/>
